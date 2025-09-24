@@ -73,6 +73,7 @@ body {
 /* Шапка */
 .page-header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);;
 }
 
 .header-container {
@@ -241,6 +242,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-social-link:hover, .team-social-link:focus {
+    background-color: #404bbf;
 }
 
 .team-social-icon {
@@ -348,6 +354,7 @@ body {
   background-color: #fff;
   flex-basis: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);;
 }
 
 .team-box {
@@ -444,6 +451,8 @@ transform: translateY(0%);
 
 .footer-social-text {
   margin-bottom: 16px;
+  font-weight: 500;
+  color: #fff;
 }
 
 .footer-social-list {
@@ -452,4 +461,8 @@ transform: translateY(0%);
 .footer-social-link:hover,
 .footer-social-link:focus {
   background-color: #31d0aa;
+}
+
+.footer-social-link {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
